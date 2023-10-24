@@ -1,0 +1,15 @@
+DOCUMENT API location scrapping Data From https://landsmaps.dol.go.th
+
+URL: https://landscrap.spcc.co.th/land/locations?province=นครราชสีมา&district=เมืองนครราชสีมา&deedNo=4000
+
+MEDTHOD: GET
+
+HEADERS: {
+	"x-api-key": 7R8W6EU1KHLXL28ZHT6N2F 
+}
+	
+QUERY: {
+	province: string | TH,
+	district: string | TH,
+	deedNo: number | TH
+}

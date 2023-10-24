@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  nodejs:
+    container_name: nodejs_puppeteer_server
+    build:
+      dockerfile: Dockerfile
+      context: ./
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 6688:6688
+    command:
+      - node
+      - src/main.js
