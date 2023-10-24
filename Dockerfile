@@ -1,5 +1,4 @@
 # Filename: Dockerfile
-
 FROM node:slim
 
 # We don't need the standalone Chromium
@@ -14,8 +13,6 @@ RUN apt-get update && apt-get install gnupg wget -y && \
     apt-get install google-chrome-stable -y --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
-# FROM public.ecr.aws/lambda/nodejs:14.2022.09.09.11
-# Create working directory
 WORKDIR /usr/src/app
 
 # Copy package.json
